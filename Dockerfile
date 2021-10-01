@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 COPY . /usr/src/app/
 
 EXPOSE 8080
+RUN pip install --no-cache-dir -r requirements.txt
 
 ENV AUTH_USERNAME=
 ENV AUTH_PASSWORD=
